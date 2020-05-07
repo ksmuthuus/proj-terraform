@@ -21,7 +21,7 @@ terramform apply -target=<resource-type>.<resrouce-name>
 ## Refersh
 
 ```sh
-terramform apply -refresh=<boolean>
+terramform apply -refresh=<boolean></boolean>
 ```
 
 ## Ref URLs
