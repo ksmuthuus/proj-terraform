@@ -6,6 +6,7 @@ resource "aws_instance" "nginx1" {
   ami                    = data.aws_ami.aws-linux.id
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.subnet1.id
+  # subnet_id = tolist(data.aws_subnet_ids.default_subnets.ids)[0]
   vpc_security_group_ids = [aws_security_group.nginx-sg.id]
   key_name               = var.key_name
 

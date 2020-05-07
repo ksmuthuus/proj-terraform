@@ -3,6 +3,11 @@
 ##################################################################################
 
 # NETWORKING #
+
+resource "aws_default_vpc" "default" {
+
+}
+
 resource "aws_vpc" "vpc" {
   cidr_block           = var.network_address_space
   enable_dns_hostnames = "true"
